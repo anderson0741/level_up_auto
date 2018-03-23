@@ -1,0 +1,22 @@
+.outerlog{
+    position: relative;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 300px;
+}
+
+.log{
+    width: 200px;
+    height: 300px;
+    box-shadow: 3px 3px 13px black;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    border: solid black 1px;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.9);
+    /* width: 300px; */
+}

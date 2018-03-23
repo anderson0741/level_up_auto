@@ -1,0 +1,113 @@
+@media (min-width: 768px) {
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+    }
+    .searchBod {
+        background-color: white;
+        border: solid black 1px;
+        border-radius: 3px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        flex-grow: -1;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        box-shadow: 3px 3px 13px black;
+    }
+    .searchCl {
+        display: flex;
+        flex-direction: column;
+        flex-grow: -1;
+        justify-content: center;
+        align-items: center;
+    }
+    .searchRadio {
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: space-around;
+        align-items: center;
+        border-top: solid black 1px;
+    }
+    .inputSearch {
+        width: 50%;
+    }
+    .vehicleInfo {
+        /* width: 15px; */
+        display: flex;
+    }
+    .inputTitleAlign {
+        display: flex;
+        /* margin: auto; */
+        justify-content: space-around;
+    }
+    .trans {
+        display: flex;
+        flex-direction: column;
+        border-right: solid black 1px;
+        justify-content: center;
+        width: 300px;
+    }
+    .doorss {
+        display: flex;
+        flex-direction: column;
+    }
+    .drivetrain {
+        display: flex;
+        /* flex-direction: row; */
+        justify-content: space-between;
+    }
+    .drive {
+        /* border-right: solid black 1px; */
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+        /* align-items: center; */
+    }
+    .edrive{
+        /* display: flex;
+        justify-content: space-between; */
+    }
+    .transmissions {}
+    .doorzz {}
+}
+
+@media (max-width: 767px) {
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .searchBod {
+        background-color: white;
+        border: solid black 1px;
+        border-radius: 3px;
+        width: 300px;
+        display: flex;
+        flex-direction: row;
+        flex-grow: -1;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    .searchCl {
+        display: flex;
+        flex-grow: -1;
+        flex-direction: column;
+        /* justify-content: center; */
+        /* align-items: center; */
+    }
+    .searchRadio {
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+        align-items: center;
+        font-size: 9px;
+    }
+    .inputSearch {
+        width: 50%;
+    }
+}

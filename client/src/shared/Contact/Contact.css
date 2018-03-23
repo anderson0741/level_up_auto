@@ -1,0 +1,31 @@
+.addresses{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.embAddress {
+    width: 600px;
+    height: 450px;
+    /* frameborder: 0; */
+    border: 0;
+    border-radius: 3px;
+    box-shadow: 3px 3px 15px gray;
+    /* allowfullscreen: truel; */
+}
+
+.deets{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    opacity: 0.8;
+    width: 600px;
+    padding: 25px 0px; 
+    border: solid black 1px;
+    border-radius: 3px;
+    box-shadow: 3px 3px 15px gray;
+}

@@ -1,0 +1,147 @@
+@media (min-width: 768px) {
+    .overallWrap {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 13px;
+    }
+    .color {
+        background-color: white;
+        border: solid black 1px;
+        border-radius: 3px;
+        display: flex;
+        flex-direction: column;
+        opacity: 0.84;
+        width: 40em;
+        box-shadow: 4px 3px 13px black;
+    }
+    .listingWrap {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        box-shadow: 4px 3px 13px black;
+    }
+    .title {
+        /* background-color: white; */
+        text-shadow: 3px 3px 3px gray;
+        /* border: solid black 1px; */
+        border-radius: 3px;
+        width: 20em;
+        text-align: center;
+        /* opacity: 0.7; */
+    }
+    .about {
+        align-self: center;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50px 50px 50px;
+        grid-gap: 0px;
+        grid-template-areas: "ma mo" "ye mi" "co pr"
+    }
+    .make {
+        grid-area: ma;
+    }
+    .model {
+        grid-area: mo;
+    }
+    .year {
+        grid-area: ye;
+    }
+    .miles {
+        grid-area: mi;
+    }
+    .carColor {
+        grid-area: co;
+    }
+    .price {
+        grid-area: pr;
+    }
+    .linkedPhotos{
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        margin: auto;
+    }
+    .vehicleInfo {
+        width: 15em;
+    }
+    .input {
+        margin-left: 2em;
+    }
+    .titleRange {
+        align-self: center;
+    }
+    .range {
+        align-self: center;
+    }
+    .result {
+        align-self: center;
+    }
+    .submit {
+        align-self: center;
+        width: 8em;
+    }
+    /* .submit:hover {
+        align-self: center;
+        width: 9em;
+        background-color: orange;
+        transition-delay: 0.9s;
+        border: gray solid 3px;
+        border-radius: 3px;
+    } */
+    .imageUpload {
+        align-self: center;
+    }
+    .imgTxt {
+        text-align: center;
+    }
+    .describe {
+        width: 90%;
+        height: 100px;
+    }
+    .thumbnail{
+        width: 570px;
+        margin: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .overallWrap {
+        width: 300px;
+        margin: auto;
+    }
+    .color {
+        background-color: white;
+        border: solid 1px black;
+        border-radius: 3px;
+        opacity: 0.84;
+        padding: 0px 13px;
+    }
+
+    .small {
+        text-align: center;
+    }
+    .description{
+        border: 1px black solid;
+    }
+    .imageUpload{
+        /* widows: 300px; */
+        /* height: 100px; */
+        padding: 13px 40px;
+    }
+    .submit{
+        /* margin: center; */
+        background: rgb(223, 223, 123);
+        /* padding: 4px 4px; */
+        padding: 0px 40px;
+    }
+    .thumbnail{
+        width: 250px;
+        margin: auto;
+    }
+
+}

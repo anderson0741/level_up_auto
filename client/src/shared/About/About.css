@@ -1,0 +1,17 @@
+.theAbout{
+    background-color: white;
+    border: solid 1px gray;
+    border-radius: 3px;
+    padding: 15px 15px;
+    box-shadow: 2px 2px 12px black;
+}
+
+.aboutPic {
+    float: left;
+    width: 500px;
+    padding: 25px 25px;
+}
+
+/* h1 {
+    
+} */

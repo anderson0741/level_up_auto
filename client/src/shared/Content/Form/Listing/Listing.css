@@ -1,0 +1,113 @@
+@media (min-width: 768px) {
+    .parent{
+        margin-bottom: 13px;
+        padding-top: 30px;
+    }
+    .images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .image {
+        /* height: 150px; */
+        width: 250px;
+    }
+    .radios {
+        display: flex;
+        justify-content: space-between;
+    }
+    .list {
+        background-color: white;
+        border: solid black 2px;
+        border-radius: 3px;
+        width: 900px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin: auto;
+        box-shadow: 4px 3px 13px black;
+    }
+    .padding {
+        padding: 0px 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between
+    }
+    .button {
+        align-self: center;
+        /* height: 18px;
+    width: 55px;
+    align-self: flex-end; */
+    }
+    .details {
+        display: flex;
+        align-self: center;
+    }
+    .inputListing {
+        /* align-self: flex-start; */
+        border-bottom: solid black 2px;
+        background-color:silver;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 15px;
+    }
+    .description {
+        /* padding: 0px 44px; */
+        padding: 0px 25px;
+    }
+}
+
+@media (max-width: 767px) {
+    .image {
+        height: 120px;
+        width: 250px;
+        /* background-color: orange; */
+        /* padding: 10px 25px; */
+        border: solid black 2px;
+        border-radius: 3px;
+        box-shadow: 3px 3px 13px black
+    }
+    .radios {
+        align-self: center !important;
+    }
+    .list {
+        background-color: white;
+        border: solid black 2px;
+        border-radius: 3px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin: auto;
+        box-shadow: 4px 3px 13px black;
+    }
+    .padding {
+        padding: 0px 25px;
+        display: flex;
+        flex-direction: column;
+    }
+    .button {
+        align-self: center;
+        /* height: 18px;
+    width: 55px;
+    align-self: flex-end; */
+    }
+    .details {
+        display: flex;
+        align-self: center;
+    }
+    .inputListing {
+        /* align-self: flex-start; */
+        border-bottom: solid black 2px;
+        background-color: rgb(218, 188, 161);
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 15px;
+    }
+    .description {
+        /* padding: 0px 44px; */
+        padding: 0px 25px;
+    }
+}

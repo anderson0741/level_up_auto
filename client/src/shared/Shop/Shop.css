@@ -1,0 +1,11 @@
+.list {
+    border: solid black 3px;
+    display: flex;
+}
+
+.parent{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    /* align-items: center; */
+}
