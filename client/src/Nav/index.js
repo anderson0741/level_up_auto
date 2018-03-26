@@ -19,10 +19,10 @@ class Nav extends Component {
                         <div className="navBod_nav guest">
                             <button className="dropbtn">Menu</button>
                             <div className="nav_dropdwn">
-                                <a><Link className='links' to="/">Home</Link></a>
-                                <a><Link className='links' to="/about">About</Link></a>
-                                <a><Link className='links' to="/cars">Shop Cars</Link></a>
-                                <a><Link className='links' to="/contact">Contact Us</Link></a>
+                                <a className='links' href="/">Home</a>
+                                <a className='links' href="/about">About</a>
+                                <a className='links' href="/cars">Shop Cars</a>
+                                <a className='links' href="/contact">Contact Us</a>
                             </div>
                         </div>
                         {isAuthenticated ? <div className="navBod_nav user">
