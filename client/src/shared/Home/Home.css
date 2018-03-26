@@ -1,34 +1,16 @@
-body {
-    background-image: url('../../images/jeep_background.jpg');
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: repeat-y;
-}
-
-/* @keyframes zoomIn {
-    from {
-      opacity: 0;
-      transform: scale3d(0.3, 0.3, 0.3);
-    }
-  
-    50% {
-      opacity: 1;
-    }
-  }
-  
-  .zoomIn {
-    animation-name: zoomIn;
-  } */
-
 @media(min-width: 862px) {
+    body {
+        background-image: url('../../images/jeep_background.jpg');
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: repeat-y;
+        background-size: cover;
+    }
     .tag {
         border: white 5px solid;
         /* box-shadow: 3px 3px 3px 3px black; */
     }
     .welcome_level {
-        /* background-image: url('../../images/TransAm.jpg'); */
-        background-size: cover;
-        background-position-y: center;
         height: 500px;
         width: 1300px;
         display: flex;
@@ -37,6 +19,9 @@ body {
         font-size: 35px;
         text-shadow: 3px 3px black;
         color: white;
+    }
+    .welcome_level_mobile {
+        display: none;
     }
     .homeDivBox {
         display: flex;
@@ -56,9 +41,7 @@ body {
         box-shadow: 3px 3px 7px black;
         border-radius: 3px;
     }
-    .shopCars {
-        grid-area: s;
-        background-image: url('../../images/jeeps.jpg');
+    .cons1 {
         background-size: 400px;
         display: flex;
         flex-direction: column;
@@ -68,21 +51,7 @@ body {
         text-decoration: none;
         text-shadow: 3px 3px 12px black;
     }
-    .aboutSelector {
-        grid-area: a;
-        background-image: url("../../images/story.JPG");
-        background-size: 400px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        color: white;
-        text-decoration: none;
-        text-shadow: 3px 3px 12px black;
-    }
-    .location {
-        grid-area: l;
-        background-image: url('../../images/location_.JPG');
+    .consTitle {
         /* background-size: 400px; */
         background-position: center;
         background-attachment: fixed;
@@ -95,6 +64,18 @@ body {
         color: white;
         text-decoration: none;
         text-shadow: 3px 3px 12px black;
+    }
+    .shopCars {
+        grid-area: s;
+        background-image: url('../../images/jeeps.jpg');
+    }
+    .aboutSelector {
+        grid-area: a;
+        background-image: url("../../images/story.JPG");
+    }
+    .location {
+        grid-area: l;
+        background-image: url('../../images/location_.JPG');
     }
     .otherFuture {
         grid-area: of;
@@ -109,22 +90,33 @@ body {
 }
 
 @media(max-width: 861px) {
+    body {
+        background-image: url('../../images/jeep_background.jpg');
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: repeat-y;
+        background-size: 861px 861px;
+    }
     .tag {
-        border: white 5px solid;
+        /* border: white 5px solid; */
         /* box-shadow: 3px 3px 3px 3px black; */
     }
     .welcome_level {
-        /* background-image: url('../../images/TransAm.jpg'); */
-        background-size: cover;
-        background-position-y: center;
-        height: 500px;
-        width: 1300px;
+        display: none;
+    }
+    .welcome_level_mobile{
+        /* height: 5vh; */
+        /* width: 15vw; */
         display: flex;
-        align-items: flex-start;
+        flex-direction: column;
         justify-content: center;
-        font-size: 35px;
+        align-items: center;
+        font-size: 15px;
         text-shadow: 3px 3px black;
         color: white;
+        margin-top: 25vh;
+        margin-bottom: 35vh;
+
     }
     .homeDivBox {
         display: flex;
@@ -136,18 +128,13 @@ body {
         display: grid;
         grid-template-columns: 400px;
         grid-template-rows: 300px 300px 100px;
-        /* grid-template-rows: 400px 200px; */
         grid-gap: 50px;
         grid-template-areas: "s" "a" "l";
     }
-    .homeBox {
+    .cons1 {
         border: solid black 2px;
         box-shadow: 3px 3px 7px black;
         border-radius: 3px;
-    }
-    .shopCars {
-        grid-area: s;
-        background-image: url('../../images/jeeps.jpg');
         background-size: 400px;
         display: flex;
         flex-direction: column;
@@ -157,22 +144,7 @@ body {
         text-decoration: none;
         text-shadow: 3px 3px 12px black;
     }
-    .aboutSelector {
-        grid-area: a;
-        background-image: url("../../images/story.JPG");
-        background-size: 400px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        color: white;
-        text-decoration: none;
-        text-shadow: 3px 3px 12px black;
-    }
-    .location {
-        grid-area: l;
-        background-image: url('../../images/location_.JPG');
-        /* background-size: 400px; */
+    .consTitle {
         background-position: center;
         background-attachment: fixed;
         background-repeat: no-repeat;
@@ -185,16 +157,16 @@ body {
         text-decoration: none;
         text-shadow: 3px 3px 12px black;
     }
-    .otherFuture {
-        grid-area: of;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        color: white;
-        text-decoration: none;
-        text-shadow: 3px 3px 12px black;
+    .shopCars {
+        grid-area: s;
+        background-image: url('../../images/jeeps.jpg');
+    }
+    .aboutSelector {
+        grid-area: a;
+        background-image: url("../../images/story.JPG");
+    }
+    .location {
+        grid-area: l;
+        background-image: url('../../images/location_.JPG');
     }
 }
-
-/* css */
