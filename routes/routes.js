@@ -10,7 +10,7 @@ listingRoutes.get('/', (req, res) => {
 });
 
 listingRoutes.post('/', (req, res) => {
-    const newListing = new Listing(req.body);
+    const newListing = new Listings(req.body);
     // listing.user = req.user._id;
     newListing.save((err) => {
         if (err) return res.status(500).send(err);

@@ -4,8 +4,6 @@
         justify-content: center;
     }
     .navBod {
-        /* background-color: rgb(92, 187, 79); */
-        /* background-image: url("https://i2.wp.com/indieogdenutah.com/wp-content/uploads/2013/05/IMG_0993.jpg?fit=4000%2C3000"); */
         background-color: rgb(255, 255, 255);
         top: 0%;
         background-position-y: 450%;
@@ -60,26 +58,17 @@
         background-color: #7a7a7a;
     }
     .imgs {
-        /* align-self: flex-start !important; */
         height: 65px;
         width: 300px;
-        /* border: 1px black solid; */
-        /* border-radius: 3px; */
         opacity: 0.9;
     }
-    /* .navi{
-        display: flex;
-        justify-content: space-between;
-        align-items: center; */
-    /* background-color: tan; */
-    /* } */
+
     .links {
         text-decoration: none;
         color: white;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 100%;
         opacity: 0.9;
-        /* align-self: flex-end; */
     }
 }
 
@@ -90,7 +79,7 @@
     }
     .navBod {
         /* background-color: rgb(92, 187, 79); */
-        background-image: url("https://i2.wp.com/indieogdenutah.com/wp-content/uploads/2013/05/IMG_0993.jpg?fit=4000%2C3000");
+        /* background-image: url("https://i2.wp.com/indieogdenutah.com/wp-content/uploads/2013/05/IMG_0993.jpg?fit=4000%2C3000"); */
         background-position-y: 450%;
         background-position-x: 40%;
         border: 5px gray solid;
