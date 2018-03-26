@@ -23,6 +23,7 @@
         padding-right: 10px;
         /* text-shadow: 2px 2px black; */
         box-shadow: 4px 3px 13px black;
+        z-index: -1;
     }
     .dropbtn {
         background-color: rgb(236, 78, 92);
