@@ -162,10 +162,13 @@
         text-decoration: none;
         display: block;
     }
-    .nav_dropdwn a:hover {
+    .nav_dropdwn a:hover{
         background-color: #ddd
     }
-    .nav_dropdwn:hover .dropdwn{
+    .menuOptions:hover .nav_dropdwn{
+        background-color: #ddd
+    }
+    .menuOptions:hover .dropdwn{
         background-color: rgba(0, 0, 0, 0.3);
     }
 }
