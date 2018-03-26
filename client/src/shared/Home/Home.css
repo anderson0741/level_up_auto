@@ -151,6 +151,9 @@
         text-shadow: 3px 3px 12px black;
     }
     .consTitle {
+        border: solid black 2px;
+        box-shadow: 3px 3px 7px black;
+        border-radius: 3px;
         background-position: center;
         background-attachment: fixed;
         background-repeat: no-repeat;
