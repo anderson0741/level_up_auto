@@ -19,10 +19,6 @@
     "node": "8.9.1"
   },
   "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/anderson0741/level_up_auto.git"
