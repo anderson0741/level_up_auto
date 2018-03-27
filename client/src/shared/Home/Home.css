@@ -98,11 +98,11 @@
 @media(max-width: 861px) {
     body {
         background-image: url('../../images/jeep_background.jpg');
-        /* background-position-x: -202px; */
-        /* background-position-y: -125px; */
+        background-position-x: -202px;
+        background-position-y: -125px;
         background-attachment: scroll;
         background-repeat: repeat-y;
-        background-size: 861px;
+        background-size: 861px 430px;
     }
     .tag {
         /* border: white 5px solid; */
