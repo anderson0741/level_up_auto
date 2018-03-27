@@ -99,7 +99,7 @@
     body {
         background-image: url('../../images/jeep_background.jpg');
         background-position-x: -202px;
-        /* background-position-y: -125px; */
+        background-position-y: -25px;
         background-attachment: scroll;
         background-repeat: repeat-y;
         background-size: 1000px 500px;
