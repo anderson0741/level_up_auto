@@ -94,7 +94,7 @@
         text-shadow: 3px 3px 12px black;
     }
 }
-
+/*  */
 @media(max-width: 861px) {
     body {
         background-image: url('../../images/jeep_background.jpg');
