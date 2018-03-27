@@ -98,7 +98,7 @@
 @media(max-width: 861px) {
     body {
         background-image: url('../../images/jeep_background.jpg');
-        background-position-x: -72px;
+        background-position-x: -172px;
         background-position-y: -12px;
         background-attachment: scroll;
         background-repeat: repeat-y;
