@@ -9,10 +9,7 @@ const path = require("path");
 const port = process.env.PORT || 8088;
 const secret = process.env.SECRET || "Millyswede Lawrence Schnorkavich arche duke"  
 
-// mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/listings") 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/listings", (err) => {  
-// mongoose.connect("mongodb://localhost/listings", (err) => {
-// mongoose.connect("/listings", (err) => {
     if (err) throw err;
     console.log("Connected to the Listings Database");
 });

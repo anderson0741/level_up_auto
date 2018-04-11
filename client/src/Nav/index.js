@@ -20,7 +20,7 @@ class Nav extends Component {
                             <button className="dropbtn">Menu</button>
                             <div className="nav_dropdwn">
                                 <a className='links' href="/">Home</a>
-                                <a className='links' href="/about">About</a>
+                                {/* <a className='links' href="/about">About</a> */}
                                 <a className='links' href="/cars">Shop Cars</a>
                                 <a className='links' href="/contact">Contact Us</a>
                             </div>
