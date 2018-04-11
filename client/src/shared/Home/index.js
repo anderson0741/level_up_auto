@@ -17,9 +17,9 @@ function Home(props) {
                     <a href="cars" className="shopCars cons1">
                         <h1>SHOP CARS</h1>
                     </a>
-                    <p className="aboutSelector cons1" {/*href="/about"*/}>
+                    <a className="aboutSelector cons1" href="/about">
                         <h1>ABOUT US</h1>
-                    </p>
+                    </a>
                     <a href="contact" className="location consTitle">
                         <h1>LOCATION</h1>
                     </a>
