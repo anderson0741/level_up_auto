@@ -16,8 +16,8 @@ function Footer() {
                 <a className='home' href="/">Home</a>
                 <p> / </p>
                 <a className='home' href="/cars">Shop</a>
-                <p> / </p>
-                <a className='home' href="/login">Login</a>
+                {/* <p> / </p> */}
+                {/* <a className='home' href="/login">Login</a> */}
             </div>
             </div>
         </div>
