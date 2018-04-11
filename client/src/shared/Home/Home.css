@@ -45,7 +45,7 @@
         border: solid black 2px;
         box-shadow: 3px 3px 7px black;
         border-radius: 3px;
-        background-size: 400px;
+        background-size: cover;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -170,7 +170,8 @@
     }
     .aboutSelector {
         grid-area: a;
-        background-image: url("../../images/story.JPG");
+        /* background-image: url("../../images/story.JPG"); */
+        background-image: url("../../images/burnout.gif");
     }
     .location {
         grid-area: l;
