@@ -45,7 +45,9 @@
         border: solid black 2px;
         box-shadow: 3px 3px 7px black;
         border-radius: 3px;
-        background-size: center;
+        /* background-size: 400px; */
+        background-size: cover;
+        background-position-x: center;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -139,7 +141,9 @@
         border: solid black 2px;
         box-shadow: 3px 3px 7px black;
         border-radius: 3px;
-        background-size: 400px;
+        /* background-size: 400px; */
+        background-size: cover;
+        background-position-x: center;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
