@@ -14,7 +14,7 @@ function Footer() {
                 </div>
                 <div className="toPage">
                 <a className='home' href="/">Home</a>
-                <p> / </p>
+                <p className='home'> / </p>
                 <a className='home' href="/cars">Shop</a>
                 {/* <p> / </p> */}
                 {/* <a className='home' href="/login">Login</a> */}

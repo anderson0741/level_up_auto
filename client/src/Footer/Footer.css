@@ -1,37 +1,69 @@
-
-.footerWrapper {
-    height: 100px;
-    /* width: 100%; */
-    /* margin-left: -10px; */
-    background-color: rgba(192, 192, 192, 0.7);
-    color: white;
-    border: 1px solid gray;
-    box-shadow: 3px 3px 10px gray;
-    /* opacity: 0.5; */
+@media (min-width: 768px) {
+    .footerWrapper {
+        height: 100px;
+        /* width: 100%; */
+        /* margin-left: -10px; */
+        background-color: rgba(192, 192, 192, 0.7);
+        color: white;
+        border: 1px solid gray;
+        box-shadow: 3px 3px 10px gray;
+        /* opacity: 0.5; */
+    }
+    .footerBod {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .icons {
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .home {
+        padding: 5px 10px;
+        text-decoration: none;
+        color: white;
+    }
+    .toPage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
-
-.footerBod {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.icons {
-    width: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.home {
-    padding: 5px 10px;
-    text-decoration: none;
-    color: white;
-}
-
-.toPage {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media (max-width: 767px) {
+    .footerWrapper {
+        height: 30px;
+        /* width: 100%; */
+        /* margin-left: -10px; */
+        background-color: rgba(192, 192, 192, 0.7);
+        color: white;
+        border: 1px solid gray;
+        box-shadow: 3px 3px 10px gray;
+        /* opacity: 0.5; */
+    }
+    .footerBod {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .icons {
+        /* width: 50px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .instagram, .facebook{
+        height: 15px;
+    }
+    .home {
+        display: none;
+    }
+    .toPage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
