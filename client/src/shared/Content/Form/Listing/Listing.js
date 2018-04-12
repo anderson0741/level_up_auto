@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import './Listing.css';
 import EditForm from '../EditForm/EditForm';
 
-class Popup extends React.Component  {
+//Another addition
+class Popup extends React.Component {
     render() {
         return (
             <div className='popup'>
@@ -15,6 +16,7 @@ class Popup extends React.Component  {
         );
     }
 }
+//
 
 class Listing extends Component {
     constructor(props) {
@@ -31,12 +33,13 @@ class Listing extends Component {
             isEditing: !this.state.isEditing
         })
     }
+    // Crap I hope will work
     togglePopup() {
         this.setState({
             showPopup: !this.state.showPopup
         });
     }
-
+    //
 
     render() {
         let { make, model, year, miles, drivetrain, transmission, color, doors, price, photo1, photo2, photo3, /*photo4,*/ description, listingDelete, _id } = this.props;
@@ -69,11 +72,22 @@ class Listing extends Component {
                                     {/* <img className="image" src={photo4} alt="" ></img> */}
                                 </div>
                                 <div className="radios">
-                                    <p>Drivetrain: {drivetrain}</p>
+                                    <button onClick={this.togglePopup.bind(this)}>show  section</button>
+                                    {this.state.showPopup ?
+                                        <Popup
+                                            text={drivetrain}
+                                            text={transmission}
+                                            text={color}
+                                            text={doors}
+                                            text={miles}
+                                            {/* <p>Drivetrain: {drivetrain}</p>
                                     <p>Transmission: {transmission}</p>
                                     <p>Color: {color}</p>
                                     <p>Doors: {doors}</p>
-                                    <p>Miles: {miles}</p>
+                                    <p>Miles: {miles}</p> */}
+                                        />
+                                        : null
+                                    }
                                 </div>
                             </div>
                         </div>
