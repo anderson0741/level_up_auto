@@ -180,5 +180,6 @@
     .location {
         grid-area: l;
         background-image: url('../../images/location_.JPG');
+        margin-bottom: 5vh;
     }
 }

@@ -94,6 +94,7 @@
         display: flex;
         background-color: rgba(255, 255, 255, 0.8);
         border: solid rgba(0, 0, 0, 0.4) 1px;
+        
     }
     .sampleImage{
         width: auto;
@@ -189,10 +190,9 @@
     }
     .popupSection{
         display: flex;
-        /* flex-direction: column; */
-        /* top: 300px; */
-        width: 360px;
-        /* margin-top: 7vh; */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .sample{
         display: flex;
@@ -205,8 +205,8 @@
         display: none;
     }
     .MobileSampleImage{
-        width: auto;
-        height: 150px;
+        width: 250px;
+        height: auto;
     }
     .prices{
         color: rgb(13, 155, 13);
