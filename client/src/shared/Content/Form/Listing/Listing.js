@@ -2,6 +2,20 @@ import React, { Component } from 'react';
 import './Listing.css';
 import EditForm from '../EditForm/EditForm';
 
+class Popup extends React.Component  {
+    render() {
+        return (
+            <div className='popup'>
+                <div className='popup_inner'>
+                    <h1>{this.props.text}</h1>
+                    {/* <button className="close" onClick={this.props.closePopup}>&times;</button> */}
+                    <span class="close" onClick={this.props.closePopup}>&times;</span>
+                </div>
+            </div>
+        );
+    }
+}
+
 class Listing extends Component {
     constructor(props) {
         super(props);
@@ -16,6 +30,7 @@ class Listing extends Component {
             isEditing: !this.state.isEditing
         })
     }
+    
 
 
     render() {
@@ -27,7 +42,7 @@ class Listing extends Component {
                     <br />
                 </div>
                 {!isEditing ?
-                    <div className='list'>
+                    <Popup className='list'>
                         <div className="content">
                             <div className="details">
                                 <div className="inputListing">
@@ -66,7 +81,7 @@ class Listing extends Component {
                             <br />
                         </div>
                         <br />
-                    </div>
+                    </Popup>
                     :
                     <EditForm {...this.props} toggleEdit={this.toggleEdit} handleEdit={this.props.handleEdit} />}
             </div>
