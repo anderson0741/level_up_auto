@@ -39,6 +39,7 @@
         color: white;
         border: 1px solid gray;
         box-shadow: 3px 3px 10px gray;
+        position: relative;
     }
     .footerBod {
         display: flex;
