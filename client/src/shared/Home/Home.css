@@ -75,13 +75,14 @@
     }
     .shopCars {
         grid-area: s;
-        background-image: url('../../images/jeeps.jpg');
-    }
-    .aboutSelector {
-        grid-area: a;
         /* background-image: url("../../images/story.JPG"); */
         background-image: url("../../images/burnout.gif");
     }
+    .aboutSelector  {
+        grid-area: a;
+        background-image: url('../../images/jeeps.jpg');
+    }
+    
     .location {
         grid-area: l;
         background-image: url('../../images/location_.JPG');
@@ -168,12 +169,12 @@
         text-decoration: none;
         text-shadow: 3px 3px 12px black;
     }
-    .shopCars {
-        grid-area: s;
-        background-image: url('../../images/jeeps.jpg');
-    }
     .aboutSelector {
         grid-area: a;
+        background-image: url('../../images/jeeps.jpg');
+    }
+    .shopCars {
+        grid-area: s;
         /* background-image: url("../../images/story.JPG"); */
         background-image: url("../../images/burnout.gif");
     }
