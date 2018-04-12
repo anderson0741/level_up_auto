@@ -25,8 +25,8 @@ export default class EditForm extends Component {
                 "description": description || '',
                 photo1: photo1 || '',
                 photo2: photo2 || '',
-                photo3: photo3 || ''
-                /*photo4: photo4 || ''*/
+                photo3: photo3 || '',
+                photo4: photo4 || ''
             },
             listings: [],
             uploadedFileCloudinaryUrl: "",
@@ -85,7 +85,7 @@ export default class EditForm extends Component {
                                     <input onChange={this.handleChange} type="text" name="photo1" value={photo1} id="" />
                                     <input onChange={this.handleChange} type="text" name="photo2" value={photo2} id="" />
                                     <input onChange={this.handleChange} type="text" name="photo3" value={photo3} id="" />
-                                    {/* <input onChange={this.handleChange} type="text" name="photo4" value={photo4} id="" /> */}
+                                    <input onChange={this.handleChange} type="text" name="photo4" value={photo4} id="" />
                                 </p>
                             </div>
                             <p className="input">Drivetrain:
