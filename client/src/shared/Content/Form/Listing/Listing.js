@@ -46,7 +46,7 @@ class Listing extends Component {
                                     <img className="image" src={photo1} alt="" ></img>
                                     <img className="image" src={photo2} alt="" ></img>
                                     <img className="image" src={photo3} alt="" ></img>
-                                    {/* <img className="image" src={photo4} alt="" ></img> */}
+                                    <img className="image" src={photo4} alt="" ></img>
                                 </div>
                                 <div className="radios">
                                     <p>Drivetrain: {drivetrain}</p>
