@@ -4,33 +4,33 @@ const Schema = mongoose.Schema;
 const listingSchema = new mongoose.Schema({
     "make": {
         type: String,
-        required: true
+        required: false
     },
     "model": {
         type: String,
-        required: true
+        required: false
     },
     "year": {
         type: Number,
-        required: true
+        required: false
     },
     "miles": {
         type: Number,
-        required: true
+        required: false
     },
     "drivetrain": {
         type: String,
-        required: true
+        required: false
     },
     "transmission": {
         type: String,
-        required: true
+        required: false
     },
     "color": String,
     "doors": String,
     "price": {
         type: Number,
-        required: true
+        required: false
     },
     "description": String,
     "photo1": String,
@@ -40,7 +40,7 @@ const listingSchema = new mongoose.Schema({
     user: {
         type: Schema.Types.ObjectId,
         ref: "User"
-        // required: true
+        // required: false
     }
 });
 
