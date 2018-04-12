@@ -80,6 +80,7 @@ class Listing extends Component {
                                             text={color}
                                             text={doors}
                                             text={miles}
+                                            closePopup={this.togglePopup.bind(this)}
                                             {/* <p>Drivetrain: {drivetrain}</p>
                                     <p>Transmission: {transmission}</p>
                                     <p>Color: {color}</p>
