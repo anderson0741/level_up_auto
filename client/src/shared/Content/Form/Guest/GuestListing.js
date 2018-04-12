@@ -71,9 +71,14 @@ class GuestListing extends React.Component {
         return (
             <div className="popupSection">
                 <div className="sample">
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
                     <img className="sampleImage" src={photo1} alt="" ></img>
                     <div className="sampleDetails">
-                    <h1>{year} {make} {model}</h1>
+                    <img className="MobileSampleImage" src={photo1} alt="" ></img>
+                    <h1 className="mobileTitle">{year} {make} {model}</h1>
                     <h4 className="prices">${price}</h4>
                     <div className="sampleRadio">
                         <p>Color: {color}</p>

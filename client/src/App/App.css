@@ -15,7 +15,11 @@ body {
 }
 
 .appFooter{
-    position: relative;
+    /* position: relative;
     bottom:0;
-    width:100%;
+    width:100%; */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
