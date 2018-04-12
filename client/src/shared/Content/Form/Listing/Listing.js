@@ -2,28 +2,11 @@ import React, { Component } from 'react';
 import './Listing.css';
 import EditForm from '../EditForm/EditForm';
 
-//Another addition
-class Popup extends React.Component {
-    render() {
-        return (
-            <div className='popup'>
-                <div className='popup_inner'>
-                    <h1>{this.props.text}</h1>
-                    {/* <button className="close" onClick={this.props.closePopup}>&times;</button> */}
-                    <span class="close" onClick={this.props.closePopup}>&times;</span>
-                </div>
-            </div>
-        );
-    }
-}
-//
-
 class Listing extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            isEditing: false,
-            showPopup: false
+            isEditing: false
         }
         this.toggleEdit = this.toggleEdit.bind(this);
     }
@@ -33,13 +16,7 @@ class Listing extends Component {
             isEditing: !this.state.isEditing
         })
     }
-    // Crap I hope will work
-    togglePopup() {
-        this.setState({
-            showPopup: !this.state.showPopup
-        });
-    }
-    //
+
 
     render() {
         let { make, model, year, miles, drivetrain, transmission, color, doors, price, photo1, photo2, photo3, /*photo4,*/ description, listingDelete, _id } = this.props;
@@ -50,7 +27,7 @@ class Listing extends Component {
                     <br />
                 </div>
                 {!isEditing ?
-                    <Popup className='list'>
+                    <div className='list'>
                         <div className="content">
                             <div className="details">
                                 <div className="inputListing">
@@ -72,23 +49,11 @@ class Listing extends Component {
                                     {/* <img className="image" src={photo4} alt="" ></img> */}
                                 </div>
                                 <div className="radios">
-                                    <button onClick={this.togglePopup.bind(this)}>show  section</button>
-                                    {this.state.showPopup ?
-                                        <Popup
-                                            text={drivetrain}
-                                            text={transmission}
-                                            text={color}
-                                            text={doors}
-                                            text={miles}
-                                            closePopup={this.togglePopup.bind(this)}
-                                            {/* <p>Drivetrain: {drivetrain}</p>
+                                    <p>Drivetrain: {drivetrain}</p>
                                     <p>Transmission: {transmission}</p>
                                     <p>Color: {color}</p>
                                     <p>Doors: {doors}</p>
-                                    <p>Miles: {miles}</p> */}
-                                        />
-                                        : null
-                                    }
+                                    <p>Miles: {miles}</p>
                                 </div>
                             </div>
                         </div>
@@ -101,7 +66,7 @@ class Listing extends Component {
                             <br />
                         </div>
                         <br />
-                    </Popup>
+                    </div>
                     :
                     <EditForm {...this.props} toggleEdit={this.toggleEdit} handleEdit={this.props.handleEdit} />}
             </div>
