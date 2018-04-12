@@ -20,7 +20,8 @@ class Listing extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            isEditing: false
+            isEditing: false,
+            showPopup: false
         }
         this.toggleEdit = this.toggleEdit.bind(this);
     }
@@ -30,7 +31,11 @@ class Listing extends Component {
             isEditing: !this.state.isEditing
         })
     }
-    
+    togglePopup() {
+        this.setState({
+            showPopup: !this.state.showPopup
+        });
+    }
 
 
     render() {
