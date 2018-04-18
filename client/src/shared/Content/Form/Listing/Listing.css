@@ -131,6 +131,7 @@
 
 @media (max-width: 767px) {
     .parent{
+        margin-top: 10vh;
         margin-bottom: 13px;
         /* padding-top: 30px; */
         height: 260vh;
