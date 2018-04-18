@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import GuestListing from './GuestListing';
+// import GuestListing2 from './GuesListing2';
 
 export default class GuestDisplay extends Component {
     render() {
