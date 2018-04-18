@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import GuestListing from './GuestListing';
-// import GuestListing2 from './GuesListing2';
+import GuestListing2 from './GuesListing2';
 
 export default class GuestDisplay extends Component {
     render() {
@@ -13,7 +13,7 @@ export default class GuestDisplay extends Component {
                 :
                 <div>
                     {listings.map((listing, index) => {
-                        return <GuestListing key={listing._id} {...listing} />
+                        return <GuestListing2 key={listing._id} {...listing} />
                     })}
                 </div>
         )

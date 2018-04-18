@@ -2,11 +2,15 @@ import React, { Component } from 'react';
 import '../Listing/Listing.css';
 // import Camaro from '../images/Camaro_orange.jpg';
 
-let { slideIndex, showSlides, slidesIndex } = this.props;
+
 class Popup2 extends React.Component {
-    showSlides() {
+    constructor (){
+        super()
+    }
+    showSlides =()=> {
         // let {slideIndex} = this.props;
         let i;
+        let slideIndex = 0;
         let slides = document.getElementById("slideDiv");
         let dots = document.getElementsByClassName("dot");
         for (i = 0; i < slides.length; i++) {
@@ -21,22 +25,22 @@ class Popup2 extends React.Component {
         }
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += "active";
-        setTimeout(showSlides, 3000);
+        setTimeout(this.showSlides, 3000);
     }
 
-    currentSlide(n) {
-        showSlides(slidesIndex = n);
+    currentSlide= (n)=> {
+        this.showSlides(n);
     }
 
-    showsSlides(n) {
+    showsSlides=(n) => {
         let i;
         let slides = document.getElementsByClassName("slideDiv");
         let dots = document.getElementsByClassName("dot");
         if (n > slides.length) {
-            slidesIndex = 1
+            n = 1
         }
         if (n < 1) {
-            slidesIndex = slides.length
+            n = slides.length
         }
         for (i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";
@@ -44,11 +48,12 @@ class Popup2 extends React.Component {
         for (i = 0; i < dots.length; i++) {
             dots[i].className = dots[i].className.replace(" active", "");
         }
-        slides[slidesIndex - 1].style.display = "block";
-        dots[slidesIndex - 1].className += " active";
+        slides[n - 1].style.display = "block";
+        dots[n - 1].className += " active";
     }
 
     render() {
+        console.log(this.props)
         return (
             <div className='popup'>
                 <div className='popup_inner'>
