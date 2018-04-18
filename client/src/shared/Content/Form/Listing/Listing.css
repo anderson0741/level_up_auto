@@ -231,4 +231,20 @@
     .mobileTitle{
         font-size: 17px;
     }
+    .loadingDisp{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-color: red; */
+        background-image: url('../Guest/loading.gif');
+        background-size: 20vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100vh;
+        color: white;
+        font-size: 3vh;
+        text-shadow: 3px 3px 3px black;
+        /* width: 200px; */
+        /* background-size: auto */
+    }
 }
