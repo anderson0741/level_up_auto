@@ -4,56 +4,35 @@ import '../Listing/Listing.css';
 
 
 class Popup2 extends React.Component {
-    constructor (){
-        super()
+    constructor(props) {
+        super(props);
+        const { photo1, photo2, photo3, photo4, photo5, photo6, photo7, photo8, photo9, photo10 } = props;
+        this.state = {
+            images: [photo1, photo2, photo3, photo4, photo5, photo6, photo7, photo8, photo9, photo10],
+            currIndex: 0,
+            active: null
+        }
     }
-    showSlides =()=> {
-        // let {slideIndex} = this.props;
-        let i;
-        let slideIndex = 0;
-        let slides = document.getElementById("slideDiv");
-        let dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none"
+    currentSlide = (p, n) => {
+        this.setState({
+            currIndex: n
+            // active: null
+        })
+        if (this.state.active === p) {
+            this.setState({ active: null, currIndex: n })
+        } else {
+            this.setState({ active: p, currIndex: p })
         }
-        slideIndex++;
-        if (slideIndex > slides.length) {
-            slideIndex = 1
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace("active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += "active";
-        setTimeout(this.showSlides, 3000);
     }
 
-    currentSlide= (n)=> {
-        this.showSlides(n);
-    }
-
-    showsSlides=(n) => {
-        let i;
-        let slides = document.getElementsByClassName("slideDiv");
-        let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {
-            n = 1
+    myColor = (p) => {
+        if (this.state.active === p) {
+            return "#717171";
         }
-        if (n < 1) {
-            n = slides.length
-        }
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[n - 1].style.display = "block";
-        dots[n - 1].className += " active";
+        return "";
     }
 
     render() {
-        console.log(this.props)
         return (
             <div className='popup'>
                 <div className='popup_inner'>
@@ -76,25 +55,17 @@ class Popup2 extends React.Component {
                                 </div>
                                 <div className="padding">
                                     <div className="images" id="images">
-                                        <br />
-                                        <div className="slideDiv fade" id="slideDiv">
-                                            <img className="photoSize" src={this.props.photo1}></img>
+                                        <div>
+                                            {this.state.images.map((image, i) => {
+                                                return <img className="dotImage" src={image} style={{ display: i !== this.state.currIndex ? "none" : "block" }} alt="" />
+                                            })}
+                                            <div className="dottin">
+                                                {this.state.images.map((image, i) => {
+                                                    return <span className="dot" onClick={() => this.currentSlide(i)} style={{ background: this.myColor(i) }}></span>
+                                                })}
+                                            </div>
                                         </div>
-                                        <div className="slideDiv fade">
-                                            <img className="image" src={this.props.photo2}></img>
-                                        </div>
-                                        <div className="slideDiv fade">
-                                            <img className="image" src={this.props.photo3}></img>
-                                        </div>
-                                        {/* <img className="image" src={photo4} alt="" ></img> */}
                                     </div>
-                                    {/* Added Below */}
-                                    <div className="dottin">
-                                        <span className="dot" onclick="currentSlide(1)"></span>
-                                        <span className="dot" onclick="currentSlide(2)"></span>
-                                        <span className="dot" onclick="currentSlide(3)"></span>
-                                    </div>
-                                    {/* Added ^^ */}
                                     <div className="radios">
                                         <p>Drivetrain: {this.props.drivetrain}</p>
                                         <p>Transmission: {this.props.transmission}</p>
@@ -109,7 +80,7 @@ class Popup2 extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <span class="close" onClick={this.props.closePopup}>&times;</span>
+                    <span className="close" onClick={this.props.closePopup}>&times;</span>
                 </div>
             </div>
         );
@@ -129,7 +100,7 @@ class GuestListing2 extends React.Component {
         });
     }
     render() {
-        let { make, model, year, miles, drivetrain, transmission, color, doors, price, photo1, photo2, photo3, /*photo4,*/ description } = this.props;
+        let { make, model, year, miles, drivetrain, transmission, color, doors, price, photo1, photo2, photo3, photo4, photo5, photo6, photo7, photo8, photo9, photo10, description } = this.props;
         return (
             <div className="popupSection">
                 <div className="sample">
@@ -148,7 +119,6 @@ class GuestListing2 extends React.Component {
                         <button onClick={this.togglePopup.bind(this)}>Show More</button>
                     </div>
                 </div>
-                {/* <button onClick={this.togglePopup.bind(this)}>show  section</button> */}
                 {this.state.showPopup ?
                     <Popup2
                         make={make}
@@ -163,6 +133,14 @@ class GuestListing2 extends React.Component {
                         photo1={photo1}
                         photo2={photo2}
                         photo3={photo3}
+                        photo3={photo3}
+                        photo4={photo4}
+                        photo5={photo5}
+                        photo6={photo6}
+                        photo7={photo7}
+                        photo8={photo8}
+                        photo9={photo9}
+                        photo10={photo10}
                         description={description}
                         closePopup={this.togglePopup.bind(this)}
                     />

@@ -10,7 +10,7 @@ export default class EditForm extends Component {
     constructor(props) {
         super(props);
         console.log(props);
-        let { make, model, year, miles, drivetrain, transmission, color, doors, price, photo1, photo2, photo3, /*photo4,*/ description } = props;
+        let { make, model, year, miles, drivetrain, transmission, color, doors, price, photo1, photo2, photo3, photo4, photo5, photo6, photo7, photo8, photo9, photo10, description } = props;
         this.state = {
             inputs: {
                 make: make || '',
@@ -25,8 +25,14 @@ export default class EditForm extends Component {
                 "description": description || '',
                 photo1: photo1 || '',
                 photo2: photo2 || '',
-                photo3: photo3 || ''
-                /*photo4: photo4 || ''*/
+                photo3: photo3 || '',
+                photo4: photo4 || '',
+                photo5: photo5 || '',
+                photo6: photo6 || '',
+                photo7: photo7 || '',
+                photo8: photo8 || '',
+                photo9: photo9 || '',
+                photo10: photo10 || ''
             },
             listings: [],
             uploadedFileCloudinaryUrl: "",
@@ -56,7 +62,7 @@ export default class EditForm extends Component {
     }
 
     render() {
-        let { make, model, year, miles, drivetrain, transmission, color, doors, price, photo1, photo2, photo3, /*photo4,*/ description } = this.state.inputs;
+        let { make, model, year, miles, drivetrain, transmission, color, doors, price, photo1, photo2, photo3, photo4, photo5, photo6, photo7, photo8, photo9, photo10, description } = this.state.inputs;
         let { listings } = this.state;
         console.log(listings);
         return (
@@ -85,7 +91,13 @@ export default class EditForm extends Component {
                                     <input onChange={this.handleChange} type="text" name="photo1" value={photo1} id="" />
                                     <input onChange={this.handleChange} type="text" name="photo2" value={photo2} id="" />
                                     <input onChange={this.handleChange} type="text" name="photo3" value={photo3} id="" />
-                                    {/* <input onChange={this.handleChange} type="text" name="photo4" value={photo4} id="" /> */}
+                                    <input onChange={this.handleChange} type="text" name="photo4" value={photo4} id="" />
+                                    <input onChange={this.handleChange} type="text" name="photo5" value={photo5} id="" />
+                                    <input onChange={this.handleChange} type="text" name="photo6" value={photo6} id="" />
+                                    <input onChange={this.handleChange} type="text" name="photo7" value={photo7} id="" />
+                                    <input onChange={this.handleChange} type="text" name="photo8" value={photo8} id="" />
+                                    <input onChange={this.handleChange} type="text" name="photo9" value={photo9} id="" />
+                                    <input onChange={this.handleChange} type="text" name="photo10" value={photo10} id="" />
                                 </p>
                             </div>
                             <p className="input">Drivetrain:

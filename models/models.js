@@ -37,6 +37,12 @@ const listingSchema = new mongoose.Schema({
     "photo2": String,
     "photo3": String,
     "photo4": String,
+    "photo5": String,
+    "photo6": String,
+    "photo7": String,
+    "photo8": String,
+    "photo9": String,
+    "photo10": String,
     user: {
         type: Schema.Types.ObjectId,
         ref: "User"

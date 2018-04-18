@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 // import Dropzone from 'react-dropzone';
 // import Upload from '../shared/Upload';
-import request from 'superagent'; 
+import request from 'superagent';
 import ListingDisplay from './Listing/ListingDisplay';
 import UserDisplay from './Userz/UserDisplay';
 // import EditForm from './EditForm/EditForm';
@@ -16,7 +16,6 @@ const cloudinaryUrl = 'https://api.cloudinary.com/v1_1/anderson0741/upload';
 export default class Form extends Component {
     constructor(props) {
         super(props);
-        // let { /*make, model, year, miles, drivetrain, transmission, color, doors, price, photos, photo1, photo2, photo3, photo4,*/ description } = props;
         this.state = {
             inputs: {
                 "make": '',
@@ -27,6 +26,12 @@ export default class Form extends Component {
                 photo2: "",
                 photo3: "",
                 photo4: "",
+                photo5: "",
+                photo6: "",
+                photo7: "",
+                photo8: "",
+                photo9: "",
+                photo10: "",
                 "drivetrain": '',
                 "transmission": '',
                 "color": '',
@@ -167,14 +172,20 @@ export default class Form extends Component {
                 "photo1": '',
                 "photo2": '',
                 "photo3": '',
-                "photo4": ''
+                "photo4": '',
+                photo5: "",
+                photo6: "",
+                photo7: "",
+                photo8: "",
+                photo9: "",
+                photo10: ""
             },
             uploadedFileCloudinaryUrl: ""
         })
     }
 
     render() {
-        let { make, model, year, miles, drivetrain, transmission, color, doors, price, description, photo1, photo2, photo3, photo4, user } = this.state.inputs;
+        let { make, model, year, miles, drivetrain, transmission, color, doors, price, description, photo1, photo2, photo3, photo4, photo5, photo6, photo7, photo8, photo9, photo10, user } = this.state.inputs;
         let { listings, loading } = this.state;
         console.log(listings);
         // console.log(make, model, year, miles, drivetrain, transmission, color, doors, price);
@@ -211,6 +222,12 @@ export default class Form extends Component {
                                     <input className="photo2" placeholder="Picture Link" onChange={this.handleChange} type="text" name="photo2" value={photo2} id="" />
                                     <input className="photo3" placeholder="Picture Link" onChange={this.handleChange} type="text" name="photo3" value={photo3} id="" />
                                     <input className="photo4" placeholder="Picture Link" onChange={this.handleChange} type="text" name="photo4" value={photo4} id="" />
+                                    <input className="photo4" placeholder="Picture Link" onChange={this.handleChange} type="text" name="photo5" value={photo5} id="" />
+                                    <input className="photo4" placeholder="Picture Link" onChange={this.handleChange} type="text" name="photo6" value={photo6} id="" />
+                                    <input className="photo4" placeholder="Picture Link" onChange={this.handleChange} type="text" name="photo7" value={photo7} id="" />
+                                    <input className="photo4" placeholder="Picture Link" onChange={this.handleChange} type="text" name="photo8" value={photo8} id="" />
+                                    <input className="photo4" placeholder="Picture Link" onChange={this.handleChange} type="text" name="photo9" value={photo9} id="" />
+                                    <input className="photo4" placeholder="Picture Link" onChange={this.handleChange} type="text" name="photo10" value={photo10} id="" />
                                 </p>
                             </div>
                             <p className="input">Drivetrain:
