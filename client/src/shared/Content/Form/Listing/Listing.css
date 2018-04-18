@@ -2,13 +2,13 @@
     .parent{
         margin-bottom: 13px;
         padding-top: 30px;
-        height: 100vh;
+        height: 1000vh;
     }
     .images {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-right: 7vw;
+        /* margin-right: 7vw; */
     }
     .image {
         /* height: 150px; */
@@ -101,6 +101,9 @@
     .sampleImage{
         width: auto;
         height: 250px;
+    }
+    .sampleDetails{
+        margin-left: 20px;
     }
     .MobileSampleImage{
         display: none;

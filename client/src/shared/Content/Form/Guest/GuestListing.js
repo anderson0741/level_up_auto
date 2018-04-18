@@ -71,19 +71,19 @@ class GuestListing extends React.Component {
         return (
             <div className="popupSection">
                 <div className="sample">
-                    <br/>
-                    <br/>
+                    <br />
+                    <br />
                     <img className="sampleImage" src={photo1} alt="" ></img>
                     <div className="sampleDetails">
-                    <img className="MobileSampleImage" src={photo1} alt="" ></img>
-                    <h1 className="mobileTitle">{year} {make} {model}</h1>
-                    <h4 className="prices">${price}</h4>
-                    <div className="sampleRadio">
-                        <p>Color: {color}</p>
-                        <p>Drivetrain: {drivetrain}</p>
-                        <p>Transmission: {transmission}</p>
-                    </div>
-                    <button onClick={this.togglePopup.bind(this)}>Show More</button>
+                        <img className="MobileSampleImage" src={photo1} alt="" ></img>
+                        <h1 className="mobileTitle">{year} {make} {model}</h1>
+                        <h4 className="prices">${price}</h4>
+                        <div className="sampleRadio">
+                            <p>Color: {color}</p>
+                            <p>Drivetrain: {drivetrain}</p>
+                            <p>Transmission: {transmission}</p>
+                        </div>
+                        <button onClick={this.togglePopup.bind(this)}>Show More</button>
                     </div>
                 </div>
                 {/* <button onClick={this.togglePopup.bind(this)}>show  section</button> */}
