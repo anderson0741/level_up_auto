@@ -86,6 +86,7 @@
     .location {
         grid-area: l;
         background-image: url('../../images/location_.JPG');
+        margin-bottom: 10vh;
     }
     .otherFuture {
         grid-area: of;
