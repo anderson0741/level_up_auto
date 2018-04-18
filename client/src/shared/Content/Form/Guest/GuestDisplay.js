@@ -6,8 +6,8 @@ export default class GuestDisplay extends Component {
         let { listings, loading } = this.props;
         return (
             loading ?
-                <div>
-                    loading
+                <div className="loadingDisp">
+                    Loading...
                 </div>
                 :
                 <div>
