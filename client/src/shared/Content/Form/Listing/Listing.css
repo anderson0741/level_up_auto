@@ -126,6 +126,11 @@
 }
 
 @media (max-width: 767px) {
+    .parent{
+        margin-bottom: 13px;
+        padding-top: 30px;
+        height: 100vh;
+    }
     .image {
         height: auto;
         width: 250px;
