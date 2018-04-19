@@ -10,27 +10,21 @@ class Popup2 extends React.Component {
         this.state = {
             images: [photo1, photo2, photo3, photo4, photo5, photo6, photo7, photo8, photo9, photo10],
             currIndex: 0,
-            active: null
+            // active: ""
         }
     }
-    currentSlide = (p, n) => {
+    currentSlide = (n) => {
         this.setState({
             currIndex: n
-            // active: null
         })
-        if (this.state.active === p) {
-            this.setState({ active: null, currIndex: n })
-        } else {
-            this.setState({ active: p, currIndex: p })
-        }
     }
 
-    myColor = (p) => {
-        if (this.state.active === p) {
-            return "#717171";
-        }
-        return "";
-    }
+    // myColor = (p) => {
+    //     if (this.state.active === p) {
+    //         return "#717171";
+    //     }
+    //     return "grey";
+    // }
 
     render() {
         return (
@@ -61,7 +55,7 @@ class Popup2 extends React.Component {
                                             })}
                                             <div className="dottin">
                                                 {this.state.images.map((image, i) => {
-                                                    return <span className="dot" onClick={() => this.currentSlide(i)} style={{ background: this.myColor(i) }}></span>
+                                                    return <span className="dot" onClick={() => this.currentSlide(i)} style={{ backgroundColor: i === this.state.currIndex ? "#717171" : "" }}></span>
                                                 })}
                                             </div>
                                         </div>
