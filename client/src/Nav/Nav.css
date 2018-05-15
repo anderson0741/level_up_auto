@@ -19,7 +19,6 @@
         border: black 1px solid;
         padding-left: 10px;
         padding-right: 10px;
-        /* text-shadow: 2px 2px black; */
         box-shadow: 4px 3px 13px black;
         z-index: 3;
     }
@@ -76,78 +75,6 @@
 }
 
 @media (max-width: 786px) {
-    /* .outerNavDiv {
-        display: flex;
-        justify-content: center;
-    }
-    .navBod {
-        background-color: rgb(255, 255, 255);
-        top: 0%;
-        background-position-y: 450%;
-        background-position-x: 40%;
-        border: 5px gray solid;
-        border-radius: 4px;
-        height: 65px;
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        align-items: center;
-        border: black 1px solid;
-        padding-left: 10px;
-        padding-right: 10px;
-        box-shadow: 4px 3px 13px black;
-        z-index: 3;
-    }
-    .dropbtn {
-        display: none;
-    }
-    mobileDropbtn{
-        background-color: rgb(236, 78, 92);
-        color: white;
-        padding: 16px;
-        font-size: 16px;
-        border: none;
-    }
-    .navBod_nav {
-        position: relative;
-        display: inline-block;
-    }
-    .nav_dropdwn {
-        display: none;
-        position: absolute;
-        background-color: #f1f1f1;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-    }
-    .nav_dropdwn a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-    }
-    .nav_dropdwn a:hover {
-        background-color: #ddd
-    }
-    .navBod_nav:hover .nav_dropdwn {
-        display: block;
-    }
-    .navBod_nav:hover .mobileDropbtn {
-        background-color: #7a7a7a;
-    }
-    .imgs {
-        height: 65px;
-        width: 300px;
-        opacity: 0.9;
-    }
-
-    .links {
-        text-decoration: none;
-        color: white;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 100%;
-        opacity: 0.9;
-    } */
     .functionalDiv {
         margin: 0px;
         padding: 0;
@@ -163,8 +90,6 @@
         border: solid rgba(0, 0, 0, 0.9) 1px;
         box-shadow: 4px 3px 13px black;
         z-index: 3;
-        /* display: flex;
-        flex-direction: row-reverse; */
     }
     .navLink {
         text-decoration: none;
@@ -182,7 +107,6 @@
         z-index: 1;
         -webkit-user-select: none;
         user-select: none;
-        /* background-color: black; */
     }
     .menuToggle input {
         display: block;
@@ -250,9 +174,4 @@
     .navBod{
         display: none;
     }
-    /* .imgs {
-        height: 65px;
-        width: 300px;
-        opacity: 0.9;
-    } */
 }
