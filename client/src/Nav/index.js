@@ -45,9 +45,8 @@ class Nav extends Component {
                             <ul className="menu">
                                 <a className="navLink" href="/"><li>Home</li></a>
                                 <a className="navLink" href="/about"><li>About</li></a>
-                                <a className="navLink" href="/dogs"><li>Dogs</li></a>
-                                <a className="navLink" href="https://europeandobes-reserve.netlify.com/"><li>Reserve Your Dog</li></a>
-                                <a className="navLink" href="/contact" target="_blank"><li>Contact Us</li></a>
+                                <a className="navLink" href="/cars"><li>Shop Cars</li></a>
+                                <a className="navLink" href="/contact"><li>Contact Us</li></a>
                             </ul>
                         </div>
                     </nav>
