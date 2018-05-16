@@ -44,7 +44,7 @@ class Nav extends Component {
 
                             <ul className="menu">
                                 <a className="navLink" href="/"><li>Home</li></a>
-                                <a className="navLink" href="/about"><li>About</li></a>
+                                {/* <a className="navLink" href="/about"><li>About</li></a> */}
                                 <a className="navLink" href="/cars"><li>Shop Cars</li></a>
                                 <a className="navLink" href="/contact"><li>Contact Us</li></a>
                             </ul>
